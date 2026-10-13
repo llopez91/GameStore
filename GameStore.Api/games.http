@@ -1,0 +1,34 @@
+###
+GET http://localhost:5204/games
+
+
+###
+GET http://localhost:5204/games/10
+
+
+###
+POST http://localhost:5204/games
+Content-Type: application/json
+
+{
+    "name": "",
+    "genre": "Platform",
+    "price": 15.66,
+    "releaseDate": "2005-10-15"
+}
+
+
+###
+PUT http://localhost:5204/games/16
+Content-Type: application/json
+
+{
+    "name": "Naruto Shippuden",
+    "genre": "Otaku",
+    "price": 20.66,
+    "releaseDate": "2005-10-15"
+}
+
+
+###
+DELETE http://localhost:5204/games/5
